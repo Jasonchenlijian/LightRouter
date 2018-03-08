@@ -11,7 +11,6 @@ import com.clj.router.RouterResponse;
  * 模块A通过API协议获取其他模块数据
  */
 public class ModuleAGetter {
-
     /**
      * 跳转到模块B主页
      */
@@ -23,6 +22,4 @@ public class ModuleAGetter {
                         .params(RouterApi.NAVIGATE_TO_MODULE_B_UI_PARAM_1, param));
         return routerResponse != null && routerResponse.isSuccess();
     }
-
-
 }
