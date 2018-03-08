@@ -1,1 +1,1 @@
-include ':app', ':lightrouter'
+include ':app', ':lightrouter', ':module_a', ':module_b', ':lib_common'
