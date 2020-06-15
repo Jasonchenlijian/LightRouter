@@ -3,7 +3,9 @@ package com.clj.router;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
+/**
+ * 路由执行结果
+ */
 public class RouterResponse {
 
     public final static int SUCCESS_CODE = 1;
