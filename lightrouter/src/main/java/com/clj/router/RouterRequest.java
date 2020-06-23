@@ -2,10 +2,22 @@ package com.clj.router;
 
 import java.util.HashMap;
 
+/**
+ * 路由请求对象
+ */
 public class RouterRequest {
 
+    /**
+     * 路由提供者的键名
+     */
     private String provider;
+    /**
+     * 路由提供者某一个Action的键名
+     */
     private String action;
+    /**
+     * 执行Action所需的额外参数
+     */
     private HashMap<String, Object> params;
 
     private RouterRequest() {

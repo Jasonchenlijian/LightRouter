@@ -5,17 +5,28 @@ package com.clj.lib.common;
  */
 public class RouterApi {
 
-    // A模块API提供者
+    /**
+     * A模块API提供者
+     */
     public static final String MODULE_A_PROVIDER = "com.clj.module.a";
-    // B模块API提供者
+    /**
+     * B模块API提供者
+     */
     public static final String MODULE_B_PROVIDER = "com.clj.module.b";
 
 
-    // 获取用户ID
+    /**
+     * 获取用户ID
+     */
     public static final String GET_USER_ID = "getUserId";
 
-    // 跳转到B模块首页
+    /**
+     * 跳转到B模块首页
+     */
     public static final String NAVIGATE_TO_MODULE_B_UI = "navigateToModuleBUI";
+    /**
+     * 跳转到B模块首页附加的参数
+     */
     public static final String NAVIGATE_TO_MODULE_B_UI_PARAM_1 = "navigateToModuleBUI_param_1";
 
 }
