@@ -1,13 +1,33 @@
-apply plugin: 'com.android.library'
+if (isModuleApp.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion 26
 
     defaultConfig {
+        if (isModuleApp.toBoolean()) {
+            applicationId "com.clj.router.a"
+        }
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+    }
+
+    sourceSets {
+        main {
+            if (isModuleApp.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
     }
 
     buildTypes {
