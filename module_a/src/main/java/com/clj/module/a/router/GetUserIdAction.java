@@ -8,7 +8,7 @@ import com.clj.router.Action;
 import java.util.HashMap;
 
 /**
- * 定义模块A对其他模块暴露“获取用户ID”的接口
+ * 对其他模块暴露“获取用户ID”的实现
  */
 public class GetUserIdAction extends Action {
 

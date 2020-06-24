@@ -10,6 +10,9 @@ public class ModuleAProvider extends Provider {
 
     @Override
     protected void registerActions() {
+        /**
+         * 注册实现，对外暴露“获取用户ID”的实现
+         */
         registerAction(RouterApi.GET_USER_ID, new GetUserIdAction());
     }
 }

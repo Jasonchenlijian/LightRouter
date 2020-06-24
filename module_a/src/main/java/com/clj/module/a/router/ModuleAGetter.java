@@ -11,6 +11,7 @@ import com.clj.router.RouterResponse;
  * 模块A通过API协议获取其他模块数据
  */
 public class ModuleAGetter {
+
     /**
      * 跳转到模块B主页
      */

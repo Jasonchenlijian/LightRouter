@@ -10,9 +10,8 @@ import com.clj.router.Action;
 import java.util.HashMap;
 
 /**
- * 定义模块A对其他模块暴露“跳转到模块B首页”的接口
+ * 对其他模块暴露“跳转到模块B首页”的接口
  */
-
 public class NavigateModuleBUIAction extends Action {
 
     @Override
